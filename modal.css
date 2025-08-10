@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Notable&family=Rubik+Doodle+Shadow&display=swap');
+
+body{
+    background-color: #deaaff;
+    height: 150vh;
+}
+
+.pageHeader{
+    font-family: 'DynaPuff';
+    font-size: 70px;
+    color: #d33a63;
+    text-align: center;
+}
+
+.pagePara{
+    font-family: 'DynaPuff';
+    font-size: 20px;
+    color: #d33a63; 
+    text-align: center;
+}
+
+.randomNumberBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 300px;
+    border: 3px solid #9d4edd;
+    border-radius: 20px;
+    background-color: #ff7900;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 40%;
+}
+
+.randomNumberOutputBox{
+    font-family: 'Rubik Doodle Shadow';
+    font-size: 70px;
+    margin: 0px;
+}
+
+.randomNumberText{
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0%;
+}
+
+.buttonBox{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.getNumberButton{
+    background-color: #f20089;
+    height: 50px;
+    width: 110px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.25ms;
+}
+
+.getNumberButton:hover{
+    background-color: #d61080;
+    color: black;
+    cursor: pointer;
+}
+
+.resetButton{
+    background-color: #f20089;
+    height: 50px;
+    width: 110px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.25ms;
+}
+
+.resetButton:hover{
+    background-color: #d61080;
+    color: black;
+    cursor: pointer;
+}
+
+
+.gridBox{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 20%;
+    margin-left: 37.5%;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #9d4edd;
+    border-radius: 50px;
+    padding: 50px;
+}
+
+img{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+
+img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.imageNumber1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber2{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber3{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber4{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber5{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber6{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber7{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber8{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber9{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber10{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+.imageNumber1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+}
+
+
+.firstMessage1{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.messageNumber1{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber2{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber3{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber4{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber5{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber6{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber7{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber8{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber9{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageNumber10{
+    font-family: 'Rubik Doodle Shadow';
+    font-weight: bold;
+    font-size: 60px;
+    color: white; 
+    margin-top: -50px;
+}
+
+.messageText{
+    color: white;
+    font-family: 'DynaPuff';
+    font-size: 28px;
+    text-align: center;
+}
+
+.firstMessage2{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.firstMessage3{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.firstMessage4{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.firstMessage5{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.firstMessage6{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.firstMessage7{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.firstMessage8{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.firstMessage9{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 34%;
+    height: 400px;
+    width: 32%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.firstMessage10{
+    position: absolute;
+    top: 80%;
+    display: none;
+    flex-direction: column;
+    border: 3px solid #edf67d;
+    background-color: #5603ad;
+    border-radius: 60px;
+    margin-top: 50px;
+    margin-left: 35%;
+    height: 400px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+}
+
+.overlay{
+    display: none;
+    height: 162vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.closeButton{
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 65%;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.foruneCookieBox1{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox2{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox3{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox4{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox5{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox6{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox7{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox8{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox9{
+    display: flex;
+    flex-direction: column;
+}
+
+.foruneCookieBox10{
+    display: flex;
+    flex-direction: column;
+}
